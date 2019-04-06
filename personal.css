@@ -115,3 +115,9 @@ footer{
 .active, .dot:hover {
   background-color: #717171;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
