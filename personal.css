@@ -1,12 +1,23 @@
-body{ font-family:HelveticaNeue-Light;
+body{
+	font-family: HelveticaNeue-Light;
+	font-size: 25px;
+	line-height: 1.5;
+
+	color: #221204;
 	}
+
 h1{
 	font-family: 'Antic Didone', serif;
-	text-align: center;]
+	text-align: center;
 }
+
 h2{
 	font-family: "Helvetica";
-text-align: center;
+	text-align: center;
+	font-size: 75px;
+	font-weight: 700;
+	line-height: 1.1;
+	margin:0 0 0.6em 0;
 }
 h3{
 	font-family: "Helvetica";
@@ -22,8 +33,20 @@ h6{
 		text-align: center;
 }
 p{
+	font-family: HelveticaNeue-Light;
 	text-align: center;
+	font-size: 25px;
+	margin: 1.6em 0 1.6em 0;
 }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
 
 .topic-list{
 	text-align: center;
@@ -35,7 +58,7 @@ footer{
   bottom: 10px;
   width: 100%;
 	font-size: 70%;
-	text-align: center;
+	padding: 100px
 }
 /*nav*/
 .sidenav {
@@ -43,13 +66,13 @@ footer{
     display: none;
     height: 100%;
     width: 250px;
-    position: fixed;
+    position: absolute;
     z-index: 1;
-    top: 0;
-    left: 0;
+    top: 1;
+    left: 1;
     background-color: white;
     overflow-x: hidden;
-    padding-top: 60px;
+    padding-top: 100px;
 }
 
 .sidenav a {
@@ -120,4 +143,34 @@ footer{
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+section.slideshow {
+  width: 900px;
+  height: 600px;
+  cursor: pointer;
+  position: relative;
+}
+
+section.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 900px;
+  height: 600px;
+  z-index: 0;
+}
+
+section.slideshow img:first-child {
+  z-index: 1;
+}
+
+@media (max-width 800px){
+	body{
+		font-size: 16px;
+	}
+
+	h2{
+		font-size: 32px;
+	}
 }

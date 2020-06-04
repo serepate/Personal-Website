@@ -10,6 +10,7 @@
 <link href="personal.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Antic+Didone" rel="stylesheet">
 
+
 <header>
 <div id="nav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -20,14 +21,9 @@
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
 	<h1>PORTFOLIO</h1>
+	<p>A compilation of past projects and research I worked on.</p>
 	</span>
-	</head>
 </header>
-
-<body>
-
-
-
 
 <script>
 	function openNav() {
@@ -37,10 +33,80 @@
 	function closeNav() {
 		document.getElementById("nav").style.display = "none";
 	}
-	</script>
+</script>
 
-<footer>
 
-</footer>
+<style>
+div.sticky-1 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 50px;
+	font-size: 20px;
+	outline-style: solid;
+
+}
+
+div.sticky-2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 50px;
+	font-size: 20px;
+	outline-style: solid;
+
+}
+
+div.sticky-3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 50px;
+	font-size: 20px;
+	outline-style: solid;
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="sticky-1">ServeIT, fall of 2019.</div>
+
+<div class="container">
+  <!-- <img src="" alt="uroc2018" class="image"> -->
+  <div class="overlay">
+    <div class="text">ServeIT 2019</div>
+  </div>
+</div>
+
+
+<div class="sticky-2">UROC, spring of 2019 program.</div>
+
+<div class="container">
+	 <img src="UROC2019.png" alt="uroc2019" class="image">
+	 <div class="overlay">
+	   <div class="text">UROC 2019</div>
+	 </div>
+</div>
+
+
+<div class="sticky-3">UROC, fall of 2018 program.</div>
+
+<div class="container">
+  <img src="UROC2018.png" alt="uroc2018" class="image">
+  <div class="overlay">
+    <div class="text">UROC 2018</div>
+  </div>
+</div>
+
+
+
+
+
 </body>
+
 </html>
